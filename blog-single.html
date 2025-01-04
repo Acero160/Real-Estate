@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>EstateAgency </title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons / Logos -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fuentes  -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+
+  <!-- Vendor CSS Archivos -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS Archivos  -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- ======= Busqueda Propiedades  ======= -->
+  <div class="click-closed"></div>
+  <!--/ Formulario busqueda  /-->
+  <div class="box-collapse">
+    <div class="title-box-d">
+      <h3 class="title-d"> Buscar Propiedad </h3>
+    </div>
+    <span class="close-box-collapse right-boxed bi bi-x"></span>
+    <div class="box-collapse-wrap form">
+      <form class="form-a">
+        <div class="row">
+          <div class="col-md-12 mb-2">
+            <div class="form-group">
+              <label class="pb-2" for="Type"> Palabra Clave </label>
+              <input type="text" class="form-control form-control-lg form-control-a" placeholder="Keyword">
+            </div>
+          </div>
+          <div class="col-md-6 mb-2">
+            <div class="form-group mt-3">
+              <label class="pb-2" for="Type">Tipos </label>
+              <select class="form-control form-select form-control-a" id="Type">
+                <option> Cualquiera </option>
+                <option> Alquiler </option>
+                <option> Vender </option>
+              </select>
+            </div>
+          </div>
+          <div class="col-md-6 mb-2">
+            <div class="form-group mt-3">
+              <label class="pb-2" for="city">Ciudad</label>
+              <select class="form-control form-select form-control-a" id="city">
+                <option>Todas las ciudades</option>
+                <option>Alabama</option>
+                <option>Arizona</option>
+                <option>California</option>
+                <option>Colorado</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-md-6 mb-2">
+            <div class="form-group mt-3">
+              <label class="pb-2" for="bedrooms">Habitaciones</label>
+              <select class="form-control form-select form-control-a" id="bedrooms">
+                <option>Cualquiera</option>
+                <option>01</option>
+                <option>02</option>
+                <option>03</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-md-6 mb-2">
+            <div class="form-group mt-3">
+              <label class="pb-2" for="garages">Garajes</label>
+              <select class="form-control form-select form-control-a" id="garages">
+                <option>Cualquiera</option>
+                <option>01</option>
+                <option>02</option>
+                <option>03</option>
+                <option>04</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-md-6 mb-2">
+            <div class="form-group mt-3">
+              <label class="pb-2" for="bathrooms">Baños</label>
+              <select class="form-control form-select form-control-a" id="bathrooms">
+                <option>Cualquiera</option>
+                <option>01</option>
+                <option>02</option>
+                <option>03</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-md-6 mb-2">
+            <div class="form-group mt-3">
+              <label class="pb-2" for="price">Precio Minimo</label>
+              <select class="form-control form-select form-control-a" id="price">
+                <option>Ilimitado</option>
+                <option>€50,000</option>
+                <option>€100,000</option>
+                <option>€150,000</option>
+                <option>€200,000</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <button type="submit" class="btn btn-b">Búsqueda propiedad</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  
+  <!-- Fin de formulario de busqueda dee propiedades -->>
+
+  <!-- ======= Header/Navbar ======= -->
+  <nav class="navbar navbar-default navbar-trans navbar-expand-lg fixed-top">
+    <div class="container">
+      <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDefault" aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <a class="navbar-brand text-brand" href="index.html">Estate<span class="color-b">Agency</span></a>
+
+      <div class="navbar-collapse collapse justify-content-center" id="navbarDefault">
+        <ul class="navbar-nav">
+
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link " href="about.html">Nosotros</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link " href="property-grid.html">Propiedades</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link " href="blog-grid.html">Blog</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Paginas</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item " href="property-single.html">Propiedades Singulares</a>
+              <a class="dropdown-item " href="blog-single.html">Blog  </a>
+              <a class="dropdown-item " href="agents-grid.html">Nuestros Agentes</a>
+              <a class="dropdown-item " href="agent-single.html">Agentes particulares</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="contact.html">Contacto</a>
+          </li>
+        </ul>
+      </div>
+
+      <button type="button" class="btn btn-b-n navbar-toggle-box navbar-toggle-box-collapse" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01">
+        <i class="bi bi-search"></i>
+      </button>
+
+    </div>
+  </nav>
+
+  <main id="main">
+
+    <!-- ======= Intro ======= -->
+    <section class="intro-single">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-lg-8">
+            <div class="title-single-box">
+              <h1 class="title-single">Diseño de tu Casa</h1>
+              <span class="color-text-a">News </span>
+            </div>
+          </div>
+          <div class="col-md-12 col-lg-4">
+            <nav aria-label="breadcrumb" class="breadcrumb-box d-flex justify-content-lg-end">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                  <a href="#">Home</a>
+                </li>   
+              </ol>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+    <!-- Fin intro -->
+
+    <!-- ======= Blog Solo ======= -->
+    <section class="news-single nav-arrow-b">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="news-img-box">
+              <img src="assets/img/slide-3.jpg" alt="" class="img-fluid">
+            </div>
+          </div>
+          <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+            <div class="post-information">
+              <ul class="list-inline text-center color-a">
+                <li class="list-inline-item mr-2">
+                  <strong>Autora: </strong>
+                  <span class="color-text-a">Morgan Jimenez</span>
+                </li>
+                <li class="list-inline-item mr-2">
+                  <strong>Categoria: </strong>
+                  <span class="color-text-a">Diseño</span>
+                </li>
+                <li class="list-inline-item">
+                  <strong>Fecha: </strong>
+                  <span class="color-text-a">19 Apr. 2024</span>
+                </li>
+              </ul>
+            </div>
+            <div class="post-content color-text-a">
+              <p class="post-intro">
+                El diseño de casas va más allá de la simple construcción; es un 
+                <strong>arte </strong> que combina funcionalidad, estética y la esencia de quienes habitarán esos espacios. Cada hogar cuenta una historia, y el diseño es la narrativa que la acompaña.
+              </p>
+              <p>
+                En los últimos años, hemos visto un auge en el diseño sostenible. Los hogares ecológicos, que utilizan materiales reciclables y tecnologías eficientes, están ganando popularidad. Además, la integración de espacios exteriores, como jardines y terrazas, se ha convertido en una tendencia clave, permitiendo a los propietarios disfrutar de la naturaleza desde la comodidad de sus hogares.
+              </p>
+              <p>
+                Cada persona tiene un estilo único, y el diseño de su hogar debe reflejarlo. Desde la elección de colores hasta la disposición de los muebles, cada decisión cuenta. Incorporar elementos personales, como obras de arte o recuerdos de viajes, puede transformar un espacio estándar en un hogar lleno de carácter y calidez.
+              </p>
+              <blockquote class="blockquote">
+                <p class="mb-4">El diseño de casas transforma espacios en hogares únicos que reflejan la esencia de quienes los habitan.</p>
+                <footer class="blockquote-footer">
+                  <strong>Morgan Jimenez</strong>
+                  <cite title="Source Title">Author</cite>
+                </footer>
+              </blockquote>
+              <p>
+                El diseño de casas es un viaje de descubrimiento y creatividad. Al considerar cuidadosamente cada elemento, desde la estructura hasta los detalles decorativos, podemos crear hogares que no solo sean funcionales, sino que también inspiren y llenen de felicidad a quienes los habitan
+              </p>
+            </div>
+            <div class="post-footer">
+              <div class="post-share">
+                <span>Compartir: </span>
+                <ul class="list-inline socials">
+                  <li class="list-inline-item">
+                    <a href="#">
+                      <i class="bi bi-facebook" aria-hidden="true"></i>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="#">
+                      <i class="bi bi-twitter" aria-hidden="true"></i>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="#">
+                      <i class="bi bi-instagram" aria-hidden="true"></i>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="#">
+                      <i class="bi bi-linkedin" aria-hidden="true"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-10 offset-md-1 col-lg-10 offset-lg-1">
+            <div class="title-box-d">
+              <h3 class="title-d">Comentarios (4)</h3>
+            </div>
+            <div class="box-comments">
+              <ul class="list-comments">
+                <li>
+                  <div class="comment-avatar">
+                    <img src="assets/img/author-2.jpg" alt="">
+                  </div>
+                  <div class="comment-details">
+                    <h4 class="comment-author">Emma Stone</h4>
+                    <span>23 Apr 2024</span>
+                    <p class="comment-description">
+                      ¡Me encantó el artículo! Estoy de acuerdo en que el diseño debe reflejar nuestra personalidad. ¿Alguna vez has pensado en cómo los colores de las paredes pueden afectar nuestro estado de ánimo?
+                    </p>
+                    <a href="#">Responder</a>
+                  </div>
+                </li>
+                <li class="comment-children">
+                  <div class="comment-avatar">
+                    <img src="assets/img/author-1.jpg" alt="">
+                  </div>
+                  <div class="comment-details">
+                    <h4 class="comment-author">Oliver Colmenares</h4>
+                    <span>24 Sep 2014</span>
+                    <p class="comment-description">
+                      Totalmente, los colores juegan un papel crucial. Además, creo que incorporar plantas en el diseño no solo embellece, sino que también mejora la calidad del aire. ¡Es un win-win!
+                    </p>
+                    <a href="#">Responder</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="comment-avatar">
+                    <img src="assets/img/author-2.jpg" alt="">
+                  </div>
+                  <div class="comment-details">
+                    <h4 class="comment-author">Emma Stone</h4>
+                    <span>25 Sep 2024</span>
+                    <p class="comment-description">
+                      ¡Exactamente! Las plantas no solo aportan vida, sino que también crean un ambiente más relajante. Estoy pensando en agregar algunas a mi sala de estar. ¿Tienes alguna planta favorita que recomendarías?
+                    </p>
+                    <a href="#">Responder</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="form-comments">
+              <div class="title-box-d">
+                <h3 class="title-d"> Dejar un comentario</h3>
+              </div>
+              <form class="form-a">
+                <div class="row">
+                  <div class="col-md-6 mb-3">
+                    <div class="form-group">
+                      <label for="inputName">Nombre completo</label>
+                      <input type="text" class="form-control form-control-lg form-control-a" id="inputName" placeholder="Nombre *" required>
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <div class="form-group">
+                      <label for="inputEmail1">Email</label>
+                      <input type="email" class="form-control form-control-lg form-control-a" id="inputEmail1" placeholder="Email *" required>
+                    </div>
+                  </div>
+                  
+                  <div class="col-md-12 mb-3">
+                    <div class="form-group">
+                      <label for="textMessage">Comentario a responder</label>
+                      <textarea id="textMessage" class="form-control" placeholder="Comentario *" name="message" cols="45" rows="8" required></textarea>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <button type="submit" class="btn btn-a">Enviar mensaje</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+    <!-- Fin Blog Particular -->
+
+  </main>
+  
+  <!--Fin main  -->
+
+  <!-- ======= Footer ======= -->
+  <section class="section-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-4">
+          <div class="widget-a">
+            <div class="w-header-a">
+              <h3 class="w-title-a text-brand">EstateAgency</h3>
+            </div>
+            <div class="w-body-a">
+              <p class="w-text-a color-text-a">
+                "EstateAgency ofrece soluciones inmobiliarias personalizadas, ayudando a nuestros clientes a comprar, vender o alquilar propiedades con confianza y profesionalismo."
+            </div>
+            <div class="w-footer-a">
+              <ul class="list-unstyled">
+                <li class="color-a">
+                  <span class="color-text-a">Email </span> contact@estateagency.com
+                </li>
+                <li class="color-a">
+                  <span class="color-text-a">Telefono .</span> +54 356 945234
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-4 section-md-t3">
+          <div class="widget-a">
+            <div class="w-header-a">
+              <h3 class="w-title-a text-brand">La empresa</h3>
+            </div>
+            <div class="w-body-a">
+              <div class="w-body-a">
+                <ul class="list-unstyled">
+                  <li class="item-list-a">
+                    <i class="bi bi-chevron-right"></i> <a href="#">Ubicacion</a>
+                  </li>
+                  <li class="item-list-a">
+                    <i class="bi bi-chevron-right"></i> <a href="#">Legal</a>
+                  </li>
+                  <li class="item-list-a">
+                    <i class="bi bi-chevron-right"></i> <a href="#">Affiliados</a>
+                  </li>
+                  <li class="item-list-a">
+                    <i class="bi bi-chevron-right"></i> <a href="#">Politica Privacidad</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-4 section-md-t3">
+          <div class="widget-a">
+            <div class="w-header-a">
+              <h3 class="w-title-a text-brand">Lugares Internacionales</h3>
+            </div>
+            <div class="w-body-a">
+              <ul class="list-unstyled">
+                <li class="item-list-a">
+                  <i class="bi bi-chevron-right"></i> <a href="#">Venezuela</a>
+                </li>
+                <li class="item-list-a">
+                  <i class="bi bi-chevron-right"></i> <a href="#">China</a>
+                </li>
+                <li class="item-list-a">
+                  <i class="bi bi-chevron-right"></i> <a href="#">Hong Kong</a>
+                </li>
+                <li class="item-list-a">
+                  <i class="bi bi-chevron-right"></i> <a href="#">Argentina</a>
+                </li>
+                <li class="item-list-a">
+                  <i class="bi bi-chevron-right"></i> <a href="#">Singapore</a>
+                </li>
+                <li class="item-list-a">
+                  <i class="bi bi-chevron-right"></i> <a href="#">Philippines</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <nav class="nav-footer">
+            <ul class="list-inline">
+              <li class="list-inline-item">
+                <a href="#">Home</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">Nosotros</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">Propiedades</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">Blog</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">Contacto</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="socials-a">
+            <ul class="list-inline">
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="bi bi-facebook" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="bi bi-twitter" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="bi bi-instagram" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="bi bi-linkedin" aria-hidden="true"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="copyright-footer">
+            <p class="copyright color-text-a">
+              &copy; Copyright
+              <span class="color-a">EstateAgency</span> Todos los derechos reservados.
+            </p>
+          </div>
+        
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Fin footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Archivos -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Plantilla Main JS Archivos -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
